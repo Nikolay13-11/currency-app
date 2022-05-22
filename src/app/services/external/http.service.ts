@@ -14,6 +14,6 @@ export class HttpService {
   }
 
   getRatesByDate(date: string) {
-    return this.http.get<IRates[]>(`http://api.nbp.pl/api/exchangerates/tables/A/${date}/?format=json`)
+    return this.http.get<IRates[]>(`https://api.nbp.pl/api/exchangerates/tables/A/${date}/?format=json`)
   }
 }
