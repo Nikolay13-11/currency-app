@@ -4,7 +4,7 @@ import {IMessage, IRate} from "../../models/models";
 import {MessageService} from "primeng/api";
 import {debounceTime, distinctUntilChanged, finalize, takeUntil} from "rxjs/operators";
 import {Table} from "primeng/table";
-import {FormControl} from "@angular/forms";
+import {UntypedFormControl} from "@angular/forms";
 import {Subject} from "rxjs";
 
 @Component({
@@ -23,7 +23,7 @@ export class MainComponent implements OnInit, OnDestroy {
   ];
 
 
-  dateField = new FormControl()
+  dateField = new UntypedFormControl()
 
   destroy$ = new Subject();
 
